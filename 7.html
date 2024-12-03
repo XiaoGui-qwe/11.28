@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    var a=[1,[2,[3]]] ;
+    for(var i=0; i<a.length;i++){
+        var b=a[i];
+        if(typeof b=='number') {
+            console.log(b);
+        }for(var j=0;j<b.length;j++) {
+            a.push(b[j]);
+    }
+    }
+</script>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    var a=[1,2,3,4,2,1];
+    var b=[];
+    for(var i=0;i<a.length; i++){
+        var c=false;
+        for(var j=0;j<b.length;j++){
+            if(b[j]==a[i]) {
+                c=true;
+                break;
+            }
+        }
+        if (!c){
+            b.push(a[i]);
+        }
+    }
+    console.log(b);
+</script>
+</html>
